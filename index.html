@@ -5,59 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Portofolio Sangkala Pamenang</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
   <link rel = "stylesheet" href = "style.css"/>
 </head>
 <body>
   
-    <video id = "video-background" loop muted autoplay>
+    <video id = "video-background" loop muted autoplay style = "display : none;">
        <source src = "https://kosred.com/a/isxpf.mp4" type = "video/mp4">
     </video>
     
+    <!--
     <center>
+      <div id="toggle"> toggle </div>
       <div class="menu"> 
-        <a href=""> home </a>
-        <a href=""> about </a>
-        <a href=""> profile </a>
+        <a href="" id = "link"> home </a>
+        <a href="" id = "link"> about </a>
+        <a href="" id = "link"> profile </a>
       </div>
-      <div id="app"> </div>
     </center>
+    -->
     
     <div class="nama">
-      <h2> Creative UI designer <font color = "skyblue" style = "font-family : courier; font-weight : bold;"> Sangkakala Pamenang </font> In Surabaya. </h2>
+      <div id="app"> </div>
+      <h2 data-aos = "fade-left"> Creative UI designer Sangkakala Pamenang In Surabaya. </h2>
     </div>
     
+    <div class = "full-background">
+    <div class="aboutme" data-aos = "fade-left" data-aos-delay = "500">
+      <h3> Aboutme </h3>
+      Hai, Perkenalkan saya Sangkakala Pamenang, saya adalah seorang pengembang dan desainer perangkat lunak dengan pengalaman membuat antarmuka digital, situs web, desain produk, tetapi saya juga memiliki kemampuan untuk mewujudkan konsep tersebut melalui pengembangan front-end yang kreatif. Saat ini, saya bekerja sebagai freelancer dan sedang mencari peluang untuk bekerja. Di masa lalu, saya telah bekerja dengan klien yang luar biasa dan memberikan produk luar biasa yang disukai pengguna.
+    </div>
+    
+    
+    <div class="my-skill" style = "padding : 10px;" data-aos = "fade-right" data-aos-delay = "500">
+      <h4> Skills </h4>
+      <center>
+        <img src="https://andrewsoebagoes.github.io/assets/img/skills/html.svg" class="img-skills" width=60 height=60 /><i class = "informasi">HTML adalah bahasa markah standar untuk dokumen yang dirancang untuk ditampilkan di peramban internet. Ini dapat dibantu oleh teknologi seperti Cascading Style Sheets (CSS) dan bahasa skrip lainnya seperti JavaScript, VBScript, dan PHP. Logo resmi dari versi terbaru, HTML5.</i><br>
+        <img src = "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png" height = "60" width = "60" class = "img-skills"><i class = "informasi">sebuah bahasa sederhana yang digunakan untuk menambahkan gaya/styling (misalnya, font, warna, spasi) ke sebuah halaman website. Jika diibaratkan, HTML merupakan sebuah kerangka, CSS ini bertindak sebagai kulit/penutup dari kerangka tersebut.</i><br>
+        <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGHf48-3h6OCgBbHIH04xXaQljAHWRSnaX0g&usqp=CAU" width = "60" height = "60" class = "img-skills"><i class = "informasi">JavaScript adalah bahasa script atau pemrograman yang memungkinkan kamu mengimplementasikan fitur serta fungsi pada bagian tertentu di halaman web. JavaScript bisa membuat situs web dan aplikasi lebih interaktif dan dinamis.</i>
+        </center>
+    </div>
+  
     <div class="profile" style = "margin-top : 5vh;">
       <center>
-        <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQca3mF6-DtrEtNaVr4FJw16capXabaWIYolg&usqp=CAU" width = "100" height = "100" style = "border-radius : 100%; border : solid 2px white;"/>
+        <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQca3mF6-DtrEtNaVr4FJw16capXabaWIYolg&usqp=CAU" width = "100" height = "100" data-aos = "zoom-out" data-aos-delay = "100" style = "border-radius : 100%; border : 5px solid white; margin-top : -45px;"/>
         <div class="sosmed">
-           <a href="" class="fa fa-instagram"><b>Instagram</b></a>
-           <a href="" class="fa fa-linkedin"><b>Linkedin</b></a>
-           <a href="" class="fa fa-twitter"><b>Twitter</b></a>
-           <a href="" class="fa fa-telegram"><b>Telegram</b></a>
-           <a href="" class="fa fa-facebook"><b>Facebook</b></a>
+           <a href="https://www.instagram.com/ka_sangka__?igsh=aG5wNjJtcWkwZzE3" class="fa fa-instagram" data-aos = "fade-right" data-aos-delay = "200"><b>Instagram</b></a>
+           <a href="https://www.linkedin.com/in/alexa-xieslav-734653260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin" data-aos = "fade-left" data-aos-delay = "200"><b>Linkedin</b></a>
+           <a href="https://t.me/sangka1" class="fa fa-telegram" data-aos = "fade-left" data-aos-delay = "200"><b>Telegram</b></a>
+           <a href="https://www.facebook.com/sangka.nanang" class="fa fa-facebook" data-aos = "fade-right" data-aos-delay = "200"><b>Facebook</b></a>
+           <a href = "https://github.com/sangka1" class = "fa fa-github" data-aos = "fade-left"><b>Github</b></a>
         </div>
       </center>
     </div>
-   
+    </center>
+    </div>
+  
     <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
     <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type = "text/babel" src = "main.js"></script>
     
-    <script type = "text/babel">
-       class Main extends React.Component {
-         render() {
-           const img = "https://qu.ax/SEeO.jpeg"
-           return (
-             <div className = "main">
-               <h1 id = "main"># Hello Coders #</h1>
-             </div>
-           )
-         }
-       }
-       
-       ReactDOM.render(<Main/>, document.getElementById("app"))
-       
-    </script>
 </body>
 </html>
