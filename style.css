@@ -1,1 +1,230 @@
-@import url("https://fonts.googleapis.com/css2?family=Itim&family=Lora&display=swap");[class~=main]{display:flex;}body{padding-left:0;}[class~=fa]:hover{background:black;}body{padding-bottom:0;}[class~=nama],[class~=main]{align-items:center;}body{padding-right:0;}body{padding-top:0;}body{margin-left:0;}body{margin-bottom:0;}[class~=nama],[class~=main]{justify-content:center;}[class~=nama],[class~=img-skills]{display:block;}body{margin-right:0;}body{margin-top:0;}body{background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThCSXbdowK9dRhAgQtjge41YWS-38DZeuklQ&usqp=CAU");}[class~=nama]{margin-top:1.875pc;}body{background-repeat:no-repeat;}[class~=img-skills]{padding-left:.052083333in;}[class~=img-skills]{padding-bottom:.052083333in;}body{background-size:100%;}body{background-color:white;}[class~=img-skills]{padding-right:.052083333in;}[class~=img-skills]{padding-top:.052083333in;}a,h1,h1,#toggle,h2,[class~=fa]:hover{color:white;}.my-skills{display:flex;}#video-background{position:fixed;}a{margin-left:.1875pc;}[class~=fa]:hover{transition:1s;}a{margin-bottom:.1875pc;}a{margin-right:.1875pc;}h1,.my-skills,[class~=aboutme]{font-family:tahoma;}a{margin-top:.052083333in;}a{text-decoration:none;}.my-skills,[class~=aboutme],h1,h2{font-weight:normal;}[class~=aboutme],.my-skills{font-size:9pt;}.my-skills{font-style:normal;}[class~=informasi]{width:100%;}a{text-align:right;}[class~=full-background],[class~=profile]{height:100vh;}[class~=aboutme]{margin-left:.15625in;}[class~=aboutme]{margin-bottom:.15625in;}[class~=fa]:hover{box-shadow:0 .052083333in .625pc 0 white;}[class~=aboutme]{margin-right:.15625in;}[class~=aboutme]{margin-top:5vh;}h1,[class~=aboutme]{padding-left:10px;}[class~=fa]:hover{border-left-width:.75pt;}h1,[class~=aboutme]{padding-bottom:.104166667in;}[class~=fa]:hover{border-bottom-width:.75pt;}[class~=fa]:hover{border-right-width:.75pt;}[class~=fa]:hover{border-top-width:.75pt;}[class~=fa]:hover,[class~=fa]{border-left-style:solid;}h1,[class~=aboutme]{padding-right:.104166667in;}[class~=aboutme],h1{padding-top:.104166667in;}[class~=fa],[class~=aboutme]{color:black;}[class~=aboutme]{width:85%;}[class~=fa]:hover,[class~=fa]{border-bottom-style:solid;}[class~=profile]{background:black;}h1{font-size:.260416667in;}[class~=profile]{opacity:.9;}[class~=sosmed]{overflow:hidden;}[class~=fa]:hover,[class~=fa]{border-right-style:solid;}h1{margin-top:.3125in;}[class~=sosmed]{opacity:.5;}h1{background:transparent;}h1,h2{width:60%;}[class~=fa]{margin-left:10%;}h1{border-radius:.052083333in;}[class~=fa]{margin-bottom:10%;}h1{text-align:center;}[class~=fa]{margin-right:10%;}h2{font-family:"Itim",cursive;}[class~=fa]{margin-top:10%;}h2{margin-top:.208333333in;}[class~=fa],i{display:flex;}h2{font-size:9.75pt;}[class~=fa]{align-items:center;}[class~=fa],[class~=fa]:hover{border-top-style:solid;}[class~=fa]{justify-content:center;}[class~=fa]:hover{border-left-color:white;}[class~=fa]{border-left-width:1.5pt;}[class~=fa]{border-bottom-width:1.5pt;}[class~=fa]{border-right-width:1.5pt;}#video-background{z-index:-1;}[class~=fa]{border-top-width:1.5pt;}[class~=fa]:hover{border-bottom-color:white;}h3,h2{text-align:left;}[class~=fa]:hover{border-right-color:white;}h2{margin-left:5%;}[class~=fa],h3,h4{font-size:1.5625pc;}h3{text-decoration:underline;}[class~=fa]:hover{border-top-color:white;}[class~=fa]:hover{border-image:none;}h3,h4{opacity:.6;}i,h3,h4{font-family:tahoma;}#video-background{width:100vw;}h3,h4{font-weight:bold;}[class~=fa]:hover{opacity:1;}#video-background{height:130vh;}#video-background{height:100vh;}h4{text-align:center;}[class~=fa]{border-left-color:black;}[class~=fa]{border-bottom-color:black;}[class~=fa]{border-right-color:black;}[class~=fa]{border-top-color:black;}[class~=fa]{border-image:none;}[class~=fa]{height:7vh;}[class~=fa]{width:80%;}[class~=fa]{border-radius:10px;}[class~=fa]{background:white;}i{font-weight:normal;}.sosmed{overflow:hidden;}i{font-size:9pt;}i{font-style:normal;}b{margin-left:.208333333in;}b{font-size:15px;}#video-background{object-fit:cover;}#video-background{margin-top:25.5vh;}
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Lora&display=swap');
+  
+body {
+  padding : 0;
+  margin : 0;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThCSXbdowK9dRhAgQtjge41YWS-38DZeuklQ&usqp=CAU");
+  background-repeat : no-repeat;
+  background-size : 100%;
+  background-color : white;
+}
+
+#toggle {
+  color : white;
+}
+
+#video-background {
+  position : fixed;
+  z-index : -1;
+  width : 100vw;
+  height : 130vh;
+  height : 100vh;
+  object-fit : cover;
+  margin-top : 25.5vh;
+}
+
+.main {
+  display : flex;
+  align-items : center;
+  justify-content : center;
+}
+
+/* .menu {
+  text-align : right;
+  font-family : courier;
+  font-weight : normal;
+  margin-top : 5px;
+}
+*/
+
+
+a {
+  color : white;
+  margin : 3px;
+  margin-top : 5px;
+  text-decoration : none;
+  text-align : right;
+}
+
+h1{
+  color : white;
+  padding : 10px;
+  color : white;
+  font-family : tahoma;
+  font-weight : normal;
+  font-size : 25px;
+  margin-top : 30px;
+  background : transparent;
+  width : 60%;
+  border-radius : 5px;
+  text-align : center;
+}
+
+.nama {
+  display : block;
+  align-items : center;
+  justify-content: center;
+  margin-top : 30px;
+}
+
+h2 {
+  color : white;
+  font-family: 'Itim', cursive;
+  margin-top : 20px;
+  font-size : 13px;
+  font-weight: normal;
+  width : 60%;
+  text-align : left;
+  margin-left : 5%;
+}
+
+h3 {
+  font-size : 25px;
+  text-decoration: underline;
+  opacity : .6;
+  font-family : tahoma;
+  font-weight : bold;
+  text-align : left;
+}
+
+h4 {
+  text-align : center;
+  font-size : 25px;
+  opacity : .6;
+  font-family : tahoma;
+  font-weight : bold;
+}
+
+.img-skills {
+  padding : 5px;
+  display : block;
+}
+
+.my-skills , i{
+  display : flex;
+  font-family : tahoma;
+  font-weight : normal;
+  font-size : 12px;
+  font-style : normal;
+}
+
+.informasi {
+  width : 100%;
+}
+
+.full-background {
+  height : 100vh;
+}
+
+.aboutme {
+  margin : 15px;
+  margin-top : 5vh;
+  padding : 10px;
+  font-size : 12px;
+  color : black;
+  width : 85%;
+  font-family : tahoma;
+  font-weight : normal;
+}
+
+.profile {
+  background : black;
+  height : 100vh;
+  opacity : 0.9;
+}
+
+.sosmed {
+   overflow : hidden;
+   opacity : 0.5;
+}
+
+.fa {
+  margin : 10%;
+  display : flex;
+  align-items : center;
+  justify-content : center;
+  color : black;
+  border : solid 2px black;
+  height : 7vh;
+  width : 80%;
+  border-radius : 10px;
+  font-size : 25px;
+  background : white;
+}
+
+.fa:hover {
+  background : black;
+  transition : 1s;
+  color : white;
+  box-shadow : 0 5px 10px 0 white;
+  border : solid 1px white;
+  opacity : 1;
+}
+
+.sosmed {
+  overflow : hidden;
+}
+
+b {
+  margin-left: 20px;
+  font-size : 15px;
+}
+
+/* mengatur sebuah responsif dalam browser */
+
+@media only screen and (min-width: 1200px) {
+  body{
+    background-color: white;
+  }
+
+  .nama{
+    display: flex;
+    margin-top: 30vh;
+  }
+  
+  h1{
+    font-size : 100px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 50px;
+  }
+  
+  h3 , h4{
+    font-size: 50px;
+  }
+
+  .profile{
+    height: 100vh;
+  }
+
+  .aboutme{
+    margin-top: 55vh;
+    font-size: 15px;
+    width: 60%;
+  }
+
+  .my-skills , i{
+    font-size: 13px;
+    width: 60%;
+  }
+
+  .img-skills{
+    margin: 10px;
+  }
+
+  .font-text{
+    display: flex;
+    width: 80%;
+  }
+
+  i{
+    font-size: 15px;
+  }
+
+  .fa{
+    margin: 30px;
+    height: 9vh;
+  }
+}
