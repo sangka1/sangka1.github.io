@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 30vh;
+        }
+
+        input{
+            width: 50%;
+            height: 20vh;
+            text-align: left;
+        }
+
+        button{
+            margin-top: 50px;
+            width: 20%;
+            height: 10vh;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <input type="text" id="text" placeholder="paste"> </input>
+        <br>
+        <button id="button"> button </button>
+    </div>
+    
+    <script>
+        let button = document.getElementById('button');
+        let input = document.getElementById('text');
+            button.addEventListener('click', function() {
+                const msg = new SpeechSynthesisUtterance()
+                if(input.value !== '') {
+                    msg.text = input.value;
+                    window.speechSynthesis.speak(msg)
+                } else {alert('silahkan isi text terlebih dahulu')}
+            })
+    </script>
+
+</body>
+</html>
