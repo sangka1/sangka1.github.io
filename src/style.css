@@ -1,1 +1,173 @@
 
+body {
+  padding : 0;
+  margin : 0;
+  font-family : arial;
+  font-size : 13px;
+}
+
+.navbar {
+  display : block;
+}
+
+.wrap {
+  display : flex;
+  justify-content : space-around;
+  margin-top : 5%;
+}
+
+.menu {
+  display : flex;
+  align-items : center;
+  justify-content : space-around;
+  margin-top : 5%;
+}
+
+a {
+  color : black;
+  text-decoration : none;
+  border-radius : 100%;
+  display : flex;
+  align-items : center;
+  justify-content: center;
+  font-size : 12px;
+}
+
+footer {
+  display : flex;
+  align-items : center;
+  justify-content : center;
+  font-family : monospace;
+  font-size : 9px;
+  background : black;
+  color : white;
+}
+
+h3 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-left : 5%;
+  font-size : 30px;
+  text-decoration : underline;
+}
+
+h2 {
+  margin : 3%;
+  margin-top : 5%;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.content {
+  margin : 5%;
+  letter-spacing : 1px;
+  font-size : 10px;
+}
+
+.container {
+  letter-spacing : 0.5px;
+  border : solid 2px black;
+  border-radius : 10px;
+  text-align : center;
+  font-size : 10px;
+}
+
+#about {
+  margin : 15px;
+}
+
+.gambar {
+  display : flex;
+  align-items : center;
+  justify-content : space-around
+}
+
+.team {
+  font-size : 10px;
+}
+
+.material-symbols-outlined {
+  display : flex;
+  align-items : center;
+  font-weight : normal;
+  justify-content : center;
+  font-size : 15px;
+  margin : 4px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+input {
+  height : 30px;
+  margin : 5px;
+  font-size : 10px;
+  background : none;
+  border : none;
+  border-bottom : 1px solid black;
+  text-align : center;
+}
+
+
+textarea {
+  font-size : 10px;
+  text-align : center;
+}
+
+.submit {
+  background : black;
+  border-radius : 10px;
+  width : 30%;
+  color : white;
+  font-size : 15px;
+  opacity : 0.7;
+}
+
+#open-text {
+  display :  none;
+  color : black;
+  text-align : center;
+}
+
+.next-read {
+  display : block;
+  font-size : 12px;
+  background : black;
+  border : none;
+  border : solid 1px black;
+  border-radius : 5px;
+  height : 30px;
+  opacity : .8;
+  font-family : arial;
+  transition : 0.5s;
+  margin : 30px;
+  color : white;
+}
+
+.next-read:active {
+  background : whitesmoke;
+  color : black;
+}
+
+#open-text {
+  font-size : 10px;
+  text-align : start;
+  margin : 20px;
+}
+
+
+.bahasa {
+  display : flex;
+  align-items : center;
+  justify-content: center;
+}
+
+#settings-logo {
+  font-size : 70px;
+  margin-top : 1vh;
+  opacity : .5;
+  }
