@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> hallo </title>
+  <style>
+    body {
+      padding : 0;
+      margin : 0;
+      text-align : center;
+      margin-top : 40vh;
+    }
+    
+    #lirik {
+      font-size : 25px;
+      font-family : courier;
+      font-weight : bold;
+    }
+    
+    .container {
+      display : none;
+    }
+    
+    .love {
+      display : none;
+      font-size : 50px;
+      animation : animasi 1s linear infinite;
+      animation-direction : alternate;
+      position : fixed;
+      top : 50%;
+      left : 50%;
+      transform : translate(-50%,-50%);
+    }
+    
+    @keyframes animasi {
+      from {
+        font-size : 50px;
+      } to {
+        font-size : 60px;
+      }
+    }
+  </style>
+</head>
+<body id = "background">
+  
+  <div class="container">
+    <center>
+      <div class="love"> ❤️ </div>
+    </center>
+    
+    <div id="lirik"> </div>
+     <audio controls id = "myAudio" hidden>
+       <source src = "sepenuhhati.mp3" type = audio/mpeg>
+     </audio>
+  </div>
+  
+  <button id = "button"> pencet </button>
+    
+    
+    <script>
+         const lirik = [
+            { text: "bukan matahari", time: 6000 },
+            { text: "bila tak menyinari", time: 10005 },
+            { text: "bukan kuntuk bunga", time: 13000 },
+            { text: "bila tak mewangi", time: 17000 },
+            { text: "dan bukanlah cinta", time: 20000 },
+            { text: "bila tidak sepenuh hati..", time: 23100 },
+            { text: "thankyouu", time: 30000 },
+            {text: "", time: 34000}
+         ];
+         
+         let button = document.getElementById("button").addEventListener("click", () => {
+           
+            var background = document.getElementById("background");
+            var love = document.querySelector(".love");
+                setTimeout(() => {
+                   background.style.transition = ".5s"
+                   background.style.background = "black"
+                   background.style.color = "white"
+                   love.style.display = "block"
+                }, 5000)
+                
+            var button = document.getElementById("button").style.display = "none"
+            var getClassContainer = document.querySelector(".container")
+                getClassContainer.style.display = "block";
+                let audio = document.getElementById("myAudio");
+                    audio.play();
+                    
+              
+              lirik.forEach((item) => {
+                 setTimeout(() => {
+                    let result = document.getElementById("lirik");
+                    result.innerHTML = item.text;
+                 }, item.time)
+              })
+          
+            }
+         )
+             
+             
+    </script>
+</body>
+</html>
