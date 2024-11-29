@@ -14,7 +14,7 @@
     }
     
     #lirik {
-      font-size : 10px;
+      font-size : 25px;
       font-family : courier;
       font-weight : bold;
     }
@@ -23,24 +23,10 @@
       display : none;
     }
     
-    .love {
-      display : none;
-      margin-top : 6vh;
-      font-size : 50px;
-      animation : animasi 1s linear infinite;
-      animation-direction : alternate;
-      position : fixed;
-      top : 50%;
-      left : 50%;
-      transform : translate(-50%,-50%);
-    }
-    
-    @keyframes animasi {
-      from {
-        font-size : 50px;
-      } to {
-        font-size : 60px;
-      }
+    button {
+      font-size : 30px;
+      border-radius : 5px;
+      color : black;
     }
   </style>
 </head>
@@ -48,12 +34,12 @@
   
   <div class="container">
     <center>
-      <div class="love"> ❤️ </div>
+      <div class="love"> </div>
     </center>
     
     <div id="lirik"> </div>
      <audio controls id = "myAudio" hidden>
-       <source src = "/src/sepenuhhati.mp3" type = audio/mpeg>
+       <source src = "sepenuhhati.mp3" type = audio/mpeg>
      </audio>
   </div>
   
@@ -61,21 +47,46 @@
     
     
     <script>
+    
+    /*let i = 0;
+    function UpdateTombol() {
+      const tombol = document.getElementById("button")
+            const color = {
+              0: "lime",
+              1: "yellow",
+              2: "purple"
+            }
+            
+            tombol.style.background = color[i]
+            tombol.style.transition = "5s"
+            i = (i + 1) % Object.keys(color).length;
+    }
+    
+    setInterval(UpdateTombol, 500)
+    
+    UpdateTombol()
+    */
+    
          const lirik = [
-            { text: "bukan matahari", time: 6000 },
-            { text: "bila tak menyinari", time: 10005 },
-            { text: "bukan kuntuk bunga", time: 13000 },
-            { text: "bila tak mewangi", time: 17000 },
-            { text: "dan bukanlah cinta", time: 20000 },
-            { text: "bila tidak sepenuh hati..", time: 23100 },
-            { text: "thankyouu", time: 30000 },
-            {text: "", time: 34000}
+           { text: "bukan matahari", time: 6000 },
+           { text: "bila tak menyinari", time: 10005 },
+           { text: "bukan kuntum bunga", time: 13000 },
+           { text: "bila tak mewangi", time: 17000 },
+           { text: "dan bukanlah cinta", time: 20000 },
+           { text: "bila tidak sepenuh hati..", time: 23100 },
+           { text: "I love Youu", time: 30000 },
+           { text: "", time: 34000}
          ];
          
          let button = document.getElementById("button").addEventListener("click", () => {
+           var getClassContainer = document.querySelector(".container")
+               getClassContainer.style.display = "block";
+               let audio = document.getElementById("myAudio");
+               audio.play();
            
-            var background = document.getElementById("background");
-            var love = document.querySelector(".love");
+           var button = document.getElementById("button").style.display = "none"
+           var background = document.getElementById("background");
+           var love = document.querySelector(".love");
                 setTimeout(() => {
                    background.style.transition = ".5s"
                    background.style.background = "black"
@@ -83,20 +94,31 @@
                    love.style.display = "block"
                 }, 5000)
                 
-            var button = document.getElementById("button").style.display = "none"
-            var getClassContainer = document.querySelector(".container")
-                getClassContainer.style.display = "block";
-                let audio = document.getElementById("myAudio");
-                    audio.play();
-                    
-              
+              let index = 0;
+               
               lirik.forEach((item) => {
+                 let writer = item.text;
                  setTimeout(() => {
-                    let result = document.getElementById("lirik");
+                    const result = document.getElementById("lirik");
+                    
+                    let warna = {
+                      0: "white",
+                      1: "red",
+                      2: "skyblue",
+                      3: "yellow",
+                      4: "purple",
+                    }
+                    
                     result.innerHTML = item.text;
+                    result.style.color = warna[index]
+                    result.style.textShadow = `0px 0px 10px ${warna[index]}, 0 0 25px ${warna[index]}`
+                    result.style.transition = "1s"
+                    index = (index + 1) % Object.keys(warna).length;
+                    
+                    
                  }, item.time)
               })
-          
+            
             }
          )
              
