@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Happy Birthday!</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      background: white;
+      transition: background 0.5s;
+    }
+    
+    .kue, .kue2 {
+      width: 150px;
+    }
+    
+    .container {
+      text-align: center;
+      margin-top: 30vh;
+    }
+    
+    #button {
+      margin : 5px;
+      background: white;
+      color: black;
+      font-family: courier, monospace;
+      font-weight: bold;
+      font-size: 40px;
+      border: 2px solid black;
+      border-radius: 10px;
+      box-shadow: -2px 7px 5px black;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    
+    #button:hover {
+      transform: scale(1.1);
+    }
+    
+    #button:active {
+      transform: scale(1);
+    }
+    
+    #container2 {
+      display: none;
+      text-align: center;
+      margin-top: 20vh;
+    }
+    
+    ul {
+      color : white;
+      text-align : center;
+      margin-left : -40px;
+      font-size : 30px;
+      margin-top : -2px;
+      font-family : monospace;
+    }
+    
+    a{
+      margin-top : 10px;
+      color : transparent;
+      animation : blink 0.5s linear infinite;
+      animation-direction : alternate;
+      font-family : courier;
+      font-weight : bold;
+    }
+    
+    .kata {
+      color : white;
+      font-weight : bold;
+      font-family : courier;
+      margin-top : 10px;
+    }
+    
+    a:nth-child(1) {
+      animation-delay : 0.5s;
+    }
+    
+    a:nth-child(2) {
+      animation-delay : 0.7s;
+    }
+    
+    @keyframes blink {
+      from {
+        color : black;
+      }
+      
+      to {
+        color : white;
+        text-shadow : 0 0 10px white, 0 0 20px white;
+      }
+    }
+  </style>
+</head>
+<body id="body">
+  <div class="container">
+    <center>
+      <img src="https://i.pinimg.com/originals/86/41/8c/86418cdd56833cd4342ca04241273153.gif" alt="Kue ulang tahun" class="kue">
+      <br>
+      <button id="button">Click</button>
+    </center>
+  </div>
+  
+  <div id="container2">
+    <center>
+      <ul>
+      <a> Happy </a>
+      <a> Birthday! </a>
+    </ul>
+      <audio id="audioku" loop style="display: none">
+        <source src="https://qu.ax/NPAZR.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <img src="https://i.pinimg.com/originals/40/50/da/4050da39db63c7fc0eee7ab6894f4c68.gif" alt="Kue ulang tahun kedua" class="kue2">
+    </center>
+    
+    <div class="kata">
+       SELAMAT ULANG TAHUN IWAN BABI !!! 🤣<br><br><br>
+       FROM FEBRI TAMPAN BANGET🥳
+    </div>
+    
+  </div>
+  
+  <script>
+    const body = document.getElementById("body");
+    const container = document.querySelector(".container");
+    const audio = document.getElementById("audioku");
+    const container2 = document.getElementById("container2");
+    const button = document.getElementById("button");
+    
+    button.addEventListener("click", () => {
+      body.style.background = "black";
+      container.style.display = "none";
+      container2.style.display = "block";
+      
+      setTimeout(() => {
+        audio.style.display = "block";
+        audio.play();
+      }, 1500);
+    });
+    
+  </script>
+</body>
+</html>
