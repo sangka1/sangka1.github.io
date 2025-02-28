@@ -46,35 +46,59 @@ h3 {
   font-family: "Anton", sans-serif;
   font-weight: 400;
   font-style: normal;
-  margin-left : 5%;
   font-size : 25px;
-  text-decoration : underline;
 }
 
 h2 {
-  margin : 3%;
+  margin : 1%;
   margin-top : 5%;
   font-family: "Anton", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
+#saya{
+  font-size : 45px;
+  opacity : 0.5;
+  padding : 5px;
+  border-radius : 100%;
+  background : black;
+  color : white;
+}
+
+.icon {
+  display : flex;
+}
+
 .content {
-  margin : 5%;
-  letter-spacing : 1px;
-  font-size : 10px;
+  margin : 8%;
+  font-size : 13px;
+  background : #E4E4E4;
+  border-radius : 10px;
+  padding : 5%;
+  height : auto;
+}
+
+.skill-logo , #computer {
+  font-size : 45px;
+  margin-top : -10%;
+}
+
+.skill {
+  font-size : 13px;
+  margin-top : -10%;
 }
 
 .container {
-  letter-spacing : 0.5px;
-  border : solid 2px black;
   border-radius : 10px;
   text-align : center;
-  font-size : 10px;
+  font-size : 13px;
 }
 
 #about {
   margin : 15px;
+  background : #E4E4E4;
+  padding : 5px;
 }
 
 .gambar {
@@ -84,7 +108,7 @@ h2 {
 }
 
 .team {
-  font-size : 10px;
+  font-size : 13px;
 }
 
 .material-symbols-outlined {
@@ -92,7 +116,7 @@ h2 {
   align-items : center;
   font-weight : normal;
   justify-content : center;
-  font-size : 15px;
+  font-size : 13px;
   margin : 4px;
   font-variation-settings:
   'FILL' 0,
@@ -104,7 +128,7 @@ h2 {
 input {
   height : 30px;
   margin : 5px;
-  font-size : 10px;
+  font-size : 13px;
   background : none;
   border : none;
   border-bottom : 1px solid black;
@@ -130,17 +154,19 @@ textarea {
   display :  none;
   color : black;
   text-align : center;
+  background : #E4E4E4;
+  padding : 5%;
+  border-radius : 3%;
 }
 
 .next-read {
   display : block;
-  font-size : 12px;
+  font-size : 13px;
   background : black;
   border : none;
   border : solid 1px black;
   border-radius : 5px;
   height : 30px;
-  opacity : .8;
   font-family : arial;
   transition : 0.5s;
   margin : 30px;
@@ -153,11 +179,11 @@ textarea {
 }
 
 #open-text {
-  font-size : 10px;
+  font-size : 13px;
   text-align : start;
-  margin : 20px;
+  margin : 1%;
+  border : solid 2px black;
 }
-
 
 .bahasa {
   display : flex;
@@ -166,7 +192,7 @@ textarea {
 }
 
 #settings-logo {
-  font-size : 70px;
+  font-size : 30px;
   margin-top : 1vh;
   opacity : .5;
 }
@@ -178,10 +204,7 @@ textarea {
 }
 
 .certificate img {
-  width : 200px;
-  padding : 1px;
-  margin : 3px;
-  border : solid 2px black;
+  width : 100px;
   border-radius : 5px;
 }
 
@@ -191,7 +214,29 @@ textarea {
   height : 210px;
 }
 
-#pendidikan {
-  font-size : 50px;
-  opacity : 0.5;
+
+.sertifikat-text {
+  padding : 5%;
 }
+
+#pendidikan {
+  font-size : 40px;
+  opacity : 0.5;
+  position : fixed;
+  background : black;
+  color : white;
+  padding : 5px;
+  border-radius : 100%;
+}
+
+.contact-h2 {
+  color : white;
+  opacity : 0.5;
+  background : black;
+  width : 40%;
+  display : flex;
+  align-items : center;
+  justify-content : center;
+  padding : 5px;
+  border-radius : 5px;
+  }
