@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> I love youu V3 ❤️ </title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      background: black;
+      color: #E5E6EB;
+      text-align: center;
+      height: 100vh;
+      font-family: courier;
+      overflow: hidden;
+      position: relative;
+    }
+
+    #mainContent {
+      display: none;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    #showButton {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      color: black;
+      font-size: 18px;
+      font-family: courier;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 8px;
+      z-index: 10;
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 40%;
+      left: 51%;
+      transform: translate(-50%, -50%);
+      padding: 0;
+      z-index: 2;
+    }
+
+    li {
+      list-style: none;
+      letter-spacing: 5px;
+      font-size: 20px;
+      font-weight: normal;
+      animation: animasi 5s linear infinite;
+      animation-fill-mode: both;
+      margin-top : 50vh;
+    }
+
+    @keyframes animasi {
+      0% {
+        text-shadow: none;
+        font-weight: normal;
+      }
+      20% {
+        text-shadow: 0 5px 5px white, 0 5px 7px white, 0 5px 5px white;
+        transform: translate(0%, -50%);
+      }
+      100% {
+        text-shadow: none;
+        font-weight: normal;
+      }
+    }
+
+    li:nth-child(n) {
+      animation-delay: calc(0.1s * var(--i));
+    }
+
+    .frame {
+      width: 160px;
+      height: 160px;
+      border: 5px solid white;
+      overflow: hidden;
+      margin: 20px auto 0;
+      position: relative;
+    }
+
+    .slider {
+      display: flex;
+      width: max-content;
+      transition: transform 0.6s ease-in-out;
+    }
+
+    .slider img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    /* Bintang */
+    .star {
+      position: absolute;
+      background: white;
+      border-radius: 50%;
+      width: 2px;
+      height: 2px;
+      opacity: 0.8;
+      animation: twinkle 2s infinite ease-in-out;
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.2; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.5); }
+    }
+  </style>
+</head>
+<body>
+
+  <button id="showButton">Tampilkan</button>
+  
+  <audio controls hidden id="musik">
+    <source src="https://qu.ax/TvBWo.mp3" type="audio/mpeg">
+  </audio>
+
+  <div id="starsContainer"></div>
+
+  <div id="mainContent">
+    <div class="frame">
+      <div class="slider" id="slider">
+        <img src="https://qu.ax/TdgEP.webp" alt="">
+        <img src="https://qu.ax/odYvw.webp" alt="">
+        <img src="https://qu.ax/xHEiw.webp" alt="">
+        <img src="https://qu.ax/iHBah.webp" alt="">
+        <img src="https://qu.ax/uqShY.webp" alt="">
+        <img src="https://qu.ax/SlLFU.webp" alt="">
+        <img src="https://qu.ax/FSATw.webp" alt="">
+        <img src="https://qu.ax/FVSed.webp" alt="">
+        <img src="https://qu.ax/hZmlN.webp" alt="">
+      </div>
+    </div>
+
+    <ul>
+      <li style="--i:1">U</li>
+      <li style="--i:2">n</li>
+      <li style="--i:3">c</li>
+      <li style="--i:4">o</li>
+      <li style="--i:5">n</li>
+      <li style="--i:6">d</li>
+      <li style="--i:7">i</li>
+      <li style="--i:8">t</li>
+      <li style="--i:9">i</li>
+      <li style="--i:10">o</li>
+      <li style="--i:11">n</li>
+      <li style="--i:12">a</li>
+      <li style="--i:13">l</li>
+      <li style="--i:14">l</li>
+      <li style="--i:15">y</li>
+    </ul>
+  </div>
+
+  <script>
+    const showBtn = document.getElementById('showButton');
+    const mainContent = document.getElementById('mainContent');
+    const musik = document.getElementById("musik");
+    const starsContainer = document.getElementById("starsContainer");
+
+    showBtn.addEventListener('click', () => {
+      mainContent.style.display = 'block';
+      showBtn.style.display = 'none';
+      musik.play();
+      spawnStars(100);
+    });
+
+    const slider = document.getElementById('slider');
+    const images = slider.querySelectorAll('img');
+    const totalImages = images.length;
+    const imgWidth = 160;
+    let index = 0;
+
+    setInterval(() => {
+      index++;
+      if (index >= totalImages) index = 0;
+      slider.style.transform = `translateX(-${index * imgWidth}px)`;
+    }, 5000);
+
+    function spawnStars(count) {
+      for (let i = 0; i < count; i++) {
+        const star = document.createElement("div");
+        star.classList.add("star");
+        star.style.top = Math.random() * 100 + "vh";
+        star.style.left = Math.random() * 100 + "vw";
+        star.style.width = Math.random() * 3 + 1 + "px";
+        star.style.height = star.style.width;
+        star.style.animationDuration = Math.random() * 3 + 2 + "s";
+        starsContainer.appendChild(star);
+      }
+    }
+  </script>
+
+</body>
+  </html>
